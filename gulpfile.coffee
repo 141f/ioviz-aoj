@@ -1,5 +1,6 @@
-gulp = require("gulp")
-bower = require("bower")
+gulp    = require("gulp")
+bower   = require("bower")
+concat  = require("gulp-concat")
 mainBowerFiles = require("main-bower-files")
 
 gulp.task "bower", (done)->
@@ -10,5 +11,10 @@ gulp.task "bower", (done)->
         done()
   return undefined
 
-gulp.task "ioviz-aoj.js", ["bower"], ->
+gulp.task "extlib.js", ["bower"], ->
+  gulp.src ["tmp/bower/**/*.js"]
+    .pipe concat("extlib.js")
+    .pipe gulp.dest("tmp/js/")
+
+gulp.task "ioviz-aoj.js", ["extlib.js"], ->
 
