@@ -1,0 +1,21 @@
+{
+  "name": "ioviz-aoj",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github:141f/ioviz-aoj.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "bower": "^1.3.12",
+    "coffee-script": "^1.8.0",
+    "gulp": "^3.8.9",
+    "main-bower-files": "^2.1.0"
+  }
+}
